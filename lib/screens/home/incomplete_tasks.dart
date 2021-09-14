@@ -26,7 +26,7 @@ class IncompleteTasks extends StatelessWidget {
             physics: NeverScrollableScrollPhysics(),
             itemBuilder: (context, index) {
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 1),
+                padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 8),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

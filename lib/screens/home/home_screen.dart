@@ -86,18 +86,21 @@ class _HomeScreenState extends State<HomeScreen> {
                           thickness: 2,
                           height: 0,
                         ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         incompleteTasks.length == 0
                             ? Container()
                             : Padding(
                                 padding: const EdgeInsets.symmetric(
-                                    vertical: 16, horizontal: 1),
+                                    vertical: 8, horizontal: 1),
                                 child: IncompleteTasks(incompleteTasks),
                               ),
                         completedTasks.length == 0
                             ? Container()
                             : Padding(
                                 padding:
-                                    const EdgeInsets.symmetric(vertical: 16),
+                                    const EdgeInsets.symmetric(vertical: 8),
                                 child: CompletedTasks(completedTasks),
                               )
                       ]),

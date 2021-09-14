@@ -46,7 +46,8 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    if (newtask != null) {
+                    newtask = newtask.trim();
+                    if (newtask != null && newtask != "") {
                       Provider.of<TasksState>(context, listen: false)
                           .addTask(Task(newtask, isCompleted: false));
                       Navigator.pop(context);

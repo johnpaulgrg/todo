@@ -24,7 +24,7 @@ class CompletedTasks extends StatelessWidget {
               print(completedTasks);
 
               return Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 1),
+                padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 8),
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -43,7 +43,7 @@ class CompletedTasks extends StatelessWidget {
                     Expanded(
                       child: Text(
                         completedTasks[index]['task'].name,
-                        style: incompleteTaskStyle,
+                        style: completeTaskStyle,
                       ),
                     )
                   ],
