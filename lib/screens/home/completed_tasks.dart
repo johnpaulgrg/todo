@@ -15,7 +15,7 @@ class CompletedTasks extends StatelessWidget {
           "Completed",
           style: completeHeadStyle,
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 8),
         ListView.builder(
             itemCount: completedTasks.length,
             shrinkWrap: true,

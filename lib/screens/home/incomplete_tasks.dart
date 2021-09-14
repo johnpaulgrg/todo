@@ -19,7 +19,7 @@ class IncompleteTasks extends StatelessWidget {
           "Incomplete",
           style: completeHeadStyle,
         ),
-        SizedBox(height: 16),
+        SizedBox(height: 8),
         ListView.builder(
             itemCount: incompleteTasks.length,
             shrinkWrap: true,
